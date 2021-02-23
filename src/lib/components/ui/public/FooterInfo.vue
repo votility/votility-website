@@ -18,6 +18,7 @@
            
           </div>
           <div>
+            <v-btn @click="goToTrello()" icon color="secondary lighten-3" class="ml-2"><v-icon>mdi-trello</v-icon></v-btn>
             <v-btn @click="goToWhitepaper()" icon color="secondary lighten-3" class="ml-2"><v-icon>mdi-file-document-outline</v-icon></v-btn>
             <v-btn @click="goToTwitter()" icon color="secondary lighten-3" class="ml-2"><v-icon>mdi-twitter</v-icon></v-btn>
             <v-btn @click="goToGithub()" icon color="secondary lighten-3" class="ml-2"><v-icon>mdi-github</v-icon></v-btn>
@@ -42,6 +43,10 @@ export default {
 
     goToBlog() {
       window.location = 'https://blog.votility.io';
+    },
+
+    goToTrello() {
+      window.location = 'https://trello.com/votilityprotocol';
     },
 
     goToTwitter() {
