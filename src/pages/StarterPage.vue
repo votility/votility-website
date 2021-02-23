@@ -195,7 +195,7 @@ export default {
 
   methods: {
     goToBlog() {
-      this.$router.push('/blog/learn-more');
+      window.location = 'https://blog.votility.io';
     }
   }
 }

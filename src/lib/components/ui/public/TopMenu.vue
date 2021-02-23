@@ -44,9 +44,20 @@
 
         <v-spacer></v-spacer>
 
-        <v-btn @click="goToApp" color="primary" large >
-          Go to App
-        </v-btn>
+        <v-tooltip bottom>
+          <template v-slot:activator="{ on, attrs }">
+            <v-btn 
+              v-bind="attrs"
+              v-on="on" 
+              color="primary" 
+              large 
+            >
+              Go to App
+            </v-btn>
+          </template>
+          <span>Soon</span>
+        </v-tooltip>
+        
       </v-container>
     </v-app-bar>
   </div>
@@ -69,6 +80,9 @@ export default {
       }, {
         title: 'FAQ',
         id: '/#faq'
+      }, {
+        title: 'Whitepaper',
+        id: '/whitepaper/whitepaper-v0.0.4.pdf'
       }],
     }
   },

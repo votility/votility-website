@@ -5,7 +5,7 @@
         <div class="text-overline mb-3">Votility Protocol</div>
         <div class="text-h3">The simplest way to build your next DAO</div>
 
-        <v-btn large color="#dc591a" class="mt-4 w-full w-sm-auto">
+        <v-btn @click="goToBlog" large color="#dc591a" class="mt-4 w-full w-sm-auto">
           Get Started
           <v-icon right>mdi-menu-right</v-icon>
         </v-btn>
@@ -18,8 +18,9 @@
            
           </div>
           <div>
-            <v-btn icon color="secondary lighten-3" class="ml-2"><v-icon>mdi-twitter</v-icon></v-btn>
-            <v-btn icon color="secondary lighten-3" class="ml-2"><v-icon>mdi-github</v-icon></v-btn>
+            <v-btn @click="goToWhitepaper()" icon color="secondary lighten-3" class="ml-2"><v-icon>mdi-file-document-outline</v-icon></v-btn>
+            <v-btn @click="goToTwitter()" icon color="secondary lighten-3" class="ml-2"><v-icon>mdi-twitter</v-icon></v-btn>
+            <v-btn @click="goToGithub()" icon color="secondary lighten-3" class="ml-2"><v-icon>mdi-github</v-icon></v-btn>
             <v-btn icon color="secondary lighten-3" class="ml-2"><v-icon>mdi-discord</v-icon></v-btn>
           </div>
         </div>
@@ -34,5 +35,22 @@
 
 <script>
 export default {
+  methods: {
+    goToWhitepaper() {
+      window.location = '/whitepaper/whitepaper-v0.0.4.pdf';
+    },
+
+    goToBlog() {
+      window.location = 'https://blog.votility.io';
+    },
+
+    goToTwitter() {
+      window.location = 'https://twitter.com/votilityp';
+    },
+
+    goToGithub() {
+      window.location = 'https://github.com/votility';
+    }
+  }
 }
 </script>
