@@ -37,7 +37,7 @@
 export default {
   methods: {
     goToWhitepaper() {
-      window.location = '/whitepaper/whitepaper-v0.0.4.pdf';
+      window.location = '/whitepaper/whitepaper-v1.0.0.pdf';
     },
 
     goToBlog() {

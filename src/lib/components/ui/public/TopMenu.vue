@@ -82,7 +82,7 @@ export default {
         id: '/#faq'
       }, {
         title: 'Whitepaper',
-        id: '/whitepaper/whitepaper-v0.0.4.pdf'
+        id: '/whitepaper/whitepaper-v1.0.0.pdf'
       }],
     }
   },
